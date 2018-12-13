@@ -1,0 +1,67 @@
+.main {
+    width: calc(100% - 177px);
+    float: left;
+}
+
+.breadcrumbs {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    line-height: 46px;
+    height: 46px;
+    background-color: #EFEFF1;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    color: #616264;
+}
+
+.data-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.data-grid .ui-table table {
+    border: none;
+    font-size: 14px;
+    color: #616264;
+}
+
+.data-grid .ui-table table th:nth-child(1),
+.data-grid .ui-table table td:nth-child(1),
+.data-grid .ui-table table td:nth-child(5),
+.data-grid .ui-table table th:nth-child(5) {
+    width: 50px;
+    text-align: center;
+    border: none;    
+}
+
+.data-grid .ui-table table th,
+.data-grid .ui-table table td {
+    border: none; 
+    border-bottom: 1px solid #ddd !important;
+    background-color: #fff;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #fb7800;
+    color: #fff !important;
+    border: none;
+    border-radius: 3px;
+    min-width: 150px;
+    font-size: 14px;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #fb7800;
+}
+
+.user-actions {
+    margin-right: 20px;
+}
+
+.ui-dialog-titlebar {
+    display: none;
+}

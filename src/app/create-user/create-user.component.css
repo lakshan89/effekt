@@ -1,0 +1,55 @@
+.user-create-model { 
+    min-width: 800px !important;
+}
+
+.user-create-model h3{
+    float: left;
+    margin: 0px;
+    padding: 10px 0;
+    color: #fb7800;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.model-header-wrapper a{
+    float: right;
+    margin-top: 10px;
+    color: #666;
+}
+
+.user-create-model label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.user-create-model input[type="text"],
+.user-create-model input[type="email"],
+.user-create-model input[type="password"],
+.user-create-model textarea {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    max-height: 100px;
+}
+
+.btn-primary,
+.btn-primary.disabled, 
+.btn-primary:disabled {
+    background-color: #fb7800;
+    color: #fff !important;
+    border: none;
+    border-radius: 3px;
+    min-width: 150px;
+    font-size: 14px;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #fb7800;
+}
+
+.footer-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

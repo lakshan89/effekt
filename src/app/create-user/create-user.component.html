@@ -1,0 +1,73 @@
+<p-dialog [(visible)]="display" [draggable]=false [modal]="true" styleClass="user-create-model">
+	<form [formGroup]="createUserForm" (ngSubmit)="onSubmit()">
+    <p-header>
+			<div class="clearfix model-header-wrapper">
+					<h3>Create New User</h3>
+					<a (click)="onClose()"><i class="fa fa-close"></i></a>
+			</div>
+    </p-header>
+	
+	<div class="crate-user">
+      
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="">First Name</label>
+						<input type="text" class="form-control" formControlName="firstName" required>
+						<span class="text-danger small" *ngIf="createUserForm.controls['firstName'].hasError('required') && (createUserForm.controls['firstName'].touched || createUserForm.controls['firstName'].dirty)">
+								This Field is Required.
+						</span>
+          </div>
+
+          <div class="col-md-6 form-group">
+              <label for="">Last Name</label>
+							<input type="text" class="form-control" formControlName="lastName" required>
+							<span class="text-danger small" *ngIf="createUserForm.controls['lastName'].hasError('required') && (createUserForm.controls['lastName'].touched || createUserForm.controls['lastName'].dirty)">
+									This Field is Required.
+							</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 form-group">
+              <label for="">Email Address (Username)</label>
+							<input type="email" class="form-control" formControlName="username" required>
+							<span class="text-danger small" *ngIf="createUserForm.controls['username'].hasError('required') && (createUserForm.controls['username'].touched || createUserForm.controls['username'].dirty)">
+									This Field is Required.
+							</span>
+
+							<span class="text-danger small" *ngIf="createUserForm.controls['username'].hasError('email') && (createUserForm.controls['username'].dirty)">
+									Invalid Email Address
+							</span>
+            </div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12 form-group">
+				<label for="">Address</label>
+				<textarea class="form-control" cols="30" rows="10" formControlName="address"></textarea>
+				<span class="text-danger small" *ngIf="createUserForm.controls['address'].hasError('required') && (createUserForm.controls['address'].touched || createUserForm.controls['address'].dirty)">
+						This Field is Required.
+				</span>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 form-group">
+				<label for="">Password</label>
+				<input type="password" class="form-control" formControlName="password" required>
+				<span class="text-danger small" *ngIf="createUserForm.controls['password'].hasError('required') && (createUserForm.controls['password'].touched || createUserForm.controls['password'].dirty)">
+						This Field is Required.
+				</span>
+			</div>
+		</div>
+     
+
+    </div>
+    <p-footer>
+			<div class="footer-wrapper text-right">
+					<input [disabled]="!createUserForm.valid" type="submit" class="btn btn-primary" value="Save">
+			</div>
+		
+	</p-footer>
+	</form>
+</p-dialog>

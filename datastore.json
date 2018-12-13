@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin@admin.com",
+      "firstName": "Admin",
+      "lastName": "User",
+      "address": "221/B Baker St, London, Englend",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "username": "j.doe@gmail.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "address": "222/B Baker St, London, Englend",
+      "password": "password"
+    }
+  ]
+}

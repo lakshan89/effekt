@@ -1,0 +1,30 @@
+.app-header {
+    height: 77px;
+    width: 100%;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.branding {
+    display: inline-block;
+    height: 77px;
+    text-align: center;
+    line-height: 70px;
+}
+
+
+.branding img {
+    width: 100px;
+    height: auto;
+}
+
+.user-options {
+    color: #fb7800;
+}
+
+.user-profile {
+    height: 77px;
+    line-height: 77px;
+}

@@ -1,0 +1,89 @@
+.login-page {
+    background-image: url(../../assets/bg.jpg);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.login-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.fogot-pass {
+    color: #fff;
+    font-size: 12px;
+}
+
+.btn-primary,
+.btn-primary.disabled, 
+.btn-primary:disabled {
+    background-color: #fb7800;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    min-width: 150px;
+}
+
+input[type="password"],
+input[type="email"] {
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+span.text-danger.small {
+    background-color: tomato;
+    width: 100%;
+    display: block;
+    color: #fff !important;
+    padding: 2px;
+    font-size: 12px;
+    margin-top: 2px;
+    border-radius: 2px;
+}
+
+.nav {
+    padding: 0px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.nav ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav li { 
+    display: inline-block; 
+}
+
+.nav li a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+li.active a {
+    background-color: #fb7800;
+    color: #fff;
+}
